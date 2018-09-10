@@ -9,7 +9,7 @@ public class CharacterAnimation : MonoBehaviour {
 	void Start () {
         Player = GetComponent<Rigidbody2D>();
         playerPosition = Player.position.x;
-	}
+    }
 
     // Update is called once per frame
     void Update () {
@@ -17,6 +17,7 @@ public class CharacterAnimation : MonoBehaviour {
     }
     private void MovePlayer()
     {
+        
         playerPosition += 0.001f;
         Player.transform.Translate(new Vector3(playerPosition,0, 0));
         if (Input.GetAxis("Jump") > 0)
