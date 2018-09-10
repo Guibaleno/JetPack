@@ -19,7 +19,7 @@ public class CoinAppearing : MonoBehaviour {
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            Destroy(gameObject);
+            //Destroy(gameObject);
         }
     }
 
